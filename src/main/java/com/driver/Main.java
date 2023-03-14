@@ -8,7 +8,7 @@ public class Main {
         }
     }
 
-    public static class B extends com.driver.A {
+    public static class B extends A {
 
         @java.lang.Override
         public String meth() {
@@ -18,6 +18,9 @@ public class Main {
 
     public static void main(String[] args) {
         B obj = new B();
+        obj.meth();
+
+        B obj1 = new B();
         obj.meth();
     }
 
